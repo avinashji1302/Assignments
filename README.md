@@ -24,9 +24,9 @@ A Flutter application that fetches and displays a list of users from an API. Use
 
 - Clone the repository:
 
-    git clone https://github.com/your-username/user-management-app.git
+    git clone https://github.com/avinashji1302/Assignments.git
 
-    cd user-management-app
+    cd Assignments
 
 - Install dependencies:
 
