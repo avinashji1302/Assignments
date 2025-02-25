@@ -40,3 +40,5 @@ A Flutter application that fetches and displays a list of users from an API. Use
 - Run the application:
   
    flutter run
+
+  ## Screenshots
