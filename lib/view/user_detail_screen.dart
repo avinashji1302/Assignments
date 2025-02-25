@@ -1,5 +1,7 @@
 import 'package:app/models/user_model.dart';
+import 'package:app/widgets/user_detrail_item.dart';
 import 'package:flutter/material.dart';
+
 import '../constants/app_colors.dart';
 
 class UserDetailScreen extends StatelessWidget {
@@ -45,59 +47,11 @@ class UserDetailScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                Text.rich(
-                  TextSpan(
-                    children: [
-                      const TextSpan(
-                        text: "Name : ",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.textColor,
-                          fontSize: 18,
-                        ),
-                      ),
-                      TextSpan(
-                        text: user.name,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.normal,
-                          color: AppColors.textColor,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Text.rich(
-                  TextSpan(
-                    children: [
-                      const TextSpan(
-                        text: "Email : ",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.textColor,
-                          fontSize: 18,
-                        ),
-                      ),
-                      TextSpan(
-                        text: user.email,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.normal,
-                          color: AppColors.textColor,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Text("Phone: ${user.phone}",
-                    style: const TextStyle(
-                        color: AppColors.textColor, fontSize: 18)),
-                const SizedBox(height: 10),
-                Text("Company: ${user.companyName ?? 'N/A'}",
-                    style: const TextStyle(
-                        color: AppColors.textColor, fontSize: 18)),
+                UserDetailItem(label: "Name", value: user.name),
+                UserDetailItem(label: "Email", value: user.email),
+                UserDetailItem(label: "Phone", value: user.phone),
+                UserDetailItem(
+                    label: "Company", value: user.companyName),
               ],
             ),
           ),
