@@ -6,3 +6,4 @@ class AppColors {
   static const Color textColor = Colors.white;
   static const Color errorTextColor = Colors.red;
 }
+     
