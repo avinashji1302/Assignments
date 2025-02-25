@@ -4,14 +4,19 @@ A Flutter application that fetches and displays a list of users from an API. Use
 
 ## Features
 
+- Display a loading indicator while fetching data.
+
 - Fetch user data from an API
 
-- Display a list of users with name search functionality
+- Display a list of users with name and email 
 
 - Show user details on a separate screen
 
+- Implemented pull-to-refresh functionality to refresh the list of users
+
 - Handle errors gracefully with appropriate messages
 
+  
 ## Technologies Used
 
 - Flutter: UI framework
